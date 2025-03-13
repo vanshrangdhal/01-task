@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>File Contents</title>
+</head>
+<body>
+	<center>
+		<hr>
+    <h2 style="background-color: mediumspringgreen;">Processed File Data</h2>
+	<hr>
+	<b>
+    <table border="1">
+        <tr th:each="row : ${data}">
+            <td th:each="cell : ${row}" th:text="${cell}"></td>
+        </tr>
+    </table>
+    <br>
+	<hr>
+    <a href="/">Upload Another File</a>
+	<hr>
+	</b>
+	</center>
+</body>
+</html>
